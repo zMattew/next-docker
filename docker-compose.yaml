@@ -3,7 +3,7 @@ services:
     container_name: next-app
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: prod.Dockerfile
       args:
         - GIT_USER=required-org-user
         - GIT_TOKEN=git-auth-token
