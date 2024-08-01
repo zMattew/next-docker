@@ -1,0 +1,15 @@
+services:
+  next-app:
+    container_name: next-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - GIT_USER=required-org-user
+        - GIT_TOKEN=git-auth-token
+        - REPO=required-repo-name
+        - BRANCH=optional-default-main
+    restart: always
+    ports:
+      - 3000:3000
+    env_file: ./.env
