@@ -34,3 +34,6 @@ docker compose up
 ````
 you can add the needed services in the docker compose file and run with it or use Kubernets to orchestrate the next app with other component 
 This imply more configurations from yourself.
+
+## OpenSource
+I want to share the best way to easly deploy nextjs app in different context. Feel free to contribute,fork.
